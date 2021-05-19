@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Kalam&family=Sacramento&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7d17636476.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <Title>Orinoco</Title>
+    <meta name="description" content="">
+
+</head>
+
+<body>
+    <header class="logo">
+        <a href="index.html" class="Logo">
+            <img id="logo" src="logo.png">
+        </a>
+        <a href="./panier.html" class="panier">
+            Panier
+        </a>
+    </header>
+
+    <section class="article">
+        <h2 id="titre2">Vos Produits</h2>
+        <table id="tableaupanier">
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Couleur</th>
+                    <th>Quantité</th>
+                    <th>Prix</th>
+                </tr>
+            </thead>
+            <tbody id="panier">
+
+            </tbody>
+            <tfoot>
+                <tr>
+
+                    <th colspan="3" id="selectiontitre">Prix Total</th>
+                    <th id="prixtotal"></th>
+                </tr>
+            </tfoot>
+        </table>
+
+        <div id="container_commande">
+            <h2 id="titre2">Passez Commande</h2>
+            <div id="passezcommande">
+
+                <form id="commande">
+                    <div class="espace">
+                        <label for="prenom">Prénom</label>
+                        <input id="prenom" type="text">
+                    </div>
+                    <div class="espace">
+                        <label for="nom">Nom</label>
+                        <input id="nom" type="text">
+                    </div>
+                    <div id="double" class="espace">
+                        <label for="e-mail">Adresse e-mail</label>
+                        <input id="mail" type="text" class="double">
+                    </div>
+                    <div id="double" class="espace">
+                        <label for="adresse">Adresse</label>
+                        <input id="adresse" type="text" class="double">
+                    </div>
+                    <div class="espace">
+                        <label for="code postal">Code Postal</label>
+                        <input id="postal" type="text">
+                    </div>
+                    <div class="espace">
+                        <label for="ville">Ville</label>
+                        <input id="ville" type="text">
+                    </div>
+
+                </form>
+            </div>
+            <div class="paiement">
+                <button id="paiement">Procéder au paiement</button>
+            </div>
+
+
+
+        </div>
+
+    </section>
+</body>
+<script src="js/panier.js"></script>
+
+</html>
