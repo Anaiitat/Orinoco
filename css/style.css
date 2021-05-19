@@ -1,0 +1,258 @@
+body {
+    width: 100%;
+    font-family: Kalam;
+}
+
+#logo {
+    width: 20%;
+}
+
+.article {
+    margin: 4%;
+    margin-top: 0%;
+}
+
+.logo {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: rgba(243 233 241);
+    border-radius: 10px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+    margin-left: 4%;
+    margin-right: 4%;
+
+}
+
+.panier {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    font-size: 1.3rem;
+    margin-right: 2rem;
+    color: black
+}
+
+#bear {
+
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+#article:hover {
+    transform: scale(1.1);
+}
+
+#article {
+    width: 450px;
+    background-color: rgba(243 233 241);
+    box-shadow: rgb(180, 164, 166) 2px 1px 5px 2px;
+    padding: 4px;
+    border-radius: 20px;
+    margin-top: 2%;
+    margin-bottom: 1%;
+
+}
+
+#article img {
+    width: 445px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+    padding: 2px;
+    height: 270px;
+}
+
+.titre {
+    display: flex;
+    justify-content: space-between;
+}
+
+#produit {
+
+    background-color: rgba(243 233 241);
+    box-shadow: rgb(180, 164, 166) 2px 1px 5px 2px;
+    padding: 4px;
+    border-radius: 20px;
+    margin: 4%;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+#produit img {
+
+    object-fit: cover;
+    border-radius: 10px;
+    padding: 2px;
+    max-width: 45%;
+    height: auto;
+    display: block;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+#ajout {
+    display: block;
+    margin: auto;
+    font-family: Kalam;
+    font-size: 1rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(82, 82, 82, 0.322);
+    padding: 0.3rem;
+}
+
+#ajout:hover {
+    transform: scale(1.1);
+}
+
+.texte {
+    text-align: center;
+}
+
+#tableaupanier {
+    width: 100%;
+}
+
+#selection {
+    text-align: center;
+}
+
+thead {
+    background-color: rgba(243 233 241);
+
+}
+
+td {
+    background-color: rgba(182, 122, 179, 0.041);
+}
+
+th {
+    font-size: 1.3rem;
+}
+
+#positionsupprimer {
+    width: 5%;
+}
+
+.supprimer {
+    font-family: Kalam;
+    font-size: 1rem;
+    background-color: rgba(243 233 241);
+    border-radius: 1rem;
+    border: 1px solid rgba(82, 82, 82, 0.322);
+}
+
+.supprimer:hover {
+    transform: scale(1.1);
+}
+
+#titre2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+tfoot {
+    background-color: rgba(182, 122, 179, 0.144);
+}
+
+#passezcommande {
+
+    display: grid;
+
+}
+
+#commande {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+label {
+    flex-direction: column;
+    padding-right: 5px;
+
+}
+
+#double {
+    grid-column: span 2 / span 2;
+}
+
+.espace {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+}
+
+input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid rgba(82, 82, 82, 0.322);
+}
+
+.paiement {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#paiement {
+    font-family: Kalam;
+    font-size: 1rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(82, 82, 82, 0.322);
+    margin: 1rem;
+    padding: 0.5rem;
+}
+
+
+#container_commande {
+    background-color: rgba(243 233 241);
+    box-shadow: rgb(180 164 166) 2px 1px 5px 2px;
+    padding: 4px;
+    border-radius: 20px;
+    margin-top: 1%;
+}
+
+#paiement:hover {
+    transform: scale(1.1);
+}
+
+#confirmation {
+    background-color: rgba(243 233 241);
+    box-shadow: rgb(180 164 166) 2px 1px 5px 2px;
+    padding: 4px;
+    border-radius: 20px;
+
+    margin: 4%;
+
+}
+
+#confirmation {
+    text-align: center;
+}
+
+#confirmation h2 {
+    background-color: rgb(204 163 201 / 60%);
+    box-shadow: rgb(180 164 166) 2px 1px 5px 2px;
+    padding: 4px;
+    border-radius: 20px;
+    margin: 4%;
+    margin-bottom: 0%;
+    margin-top: 1%;
+}
+
+#aurevoir {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
