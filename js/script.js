@@ -2,7 +2,7 @@
 
 const container = document.getElementById("bear");
 
-fetch("${apiUrl}/api/teddies")
+fetch(`${apiUrl}/api/teddies`)
     .then(response => response.json())
     .then(teddies => {
         console.log(teddies);
