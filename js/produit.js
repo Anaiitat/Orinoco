@@ -6,7 +6,7 @@ const container = document.getElementById("produit");
 const url = new URL(window.location.href);
 const params = new URLSearchParams(url.search);
 const id = params.get("id")
-fetch(`http://localhost:3000/api/teddies/${id}`)
+fetch(`${apiUrl}/api/teddies/s${id}`)
     .then((response) => response.json())
     .then(teddie => {
 
