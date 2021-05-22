@@ -46,6 +46,12 @@ body {
 
 }
 
+.article h1 {
+    display: flex;
+    justify-content: center;
+    font-size:2rem;
+}
+
 #article:hover {
     transform: scale(1.1);
 }
