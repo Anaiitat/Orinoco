@@ -68,7 +68,7 @@
                     </div>
                     <div id="double" class="espace">
                         <label for="adresse">Adresse</label>
-                        <input id="adresse" type="text" class="double">
+                        <input id="adresse" type="email" class="double">
                     </div>
                     <div class="espace">
                         <label for="code postal">Code Postal</label>
@@ -82,7 +82,7 @@
                 </form>
             </div>
             <div class="paiement">
-                <button id="paiement">Procéder au paiement</button>
+                <button id="paiement" onclick="sendPayment()">Procéder au paiement</button>
             </div>
 
 
@@ -92,5 +92,8 @@
     </section>
 </body>
 <script src="js/panier.js"></script>
+<script>
+    initCart();
+</script>
 
 </html>
