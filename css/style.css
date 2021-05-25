@@ -193,6 +193,11 @@ label {
     grid-column: span 2 / span 2;
 }
 
+#double2 {
+    grid-column: span 2 / span 2;
+}
+
+
 .espace {
     margin-bottom: 30px;
     display: flex;
