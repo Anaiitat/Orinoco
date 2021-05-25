@@ -1,22 +1,26 @@
-//Récupération de l'id de la commande dans le local storage 
-const recupid = localStorage.getItem("responseId");
-const recupprix = localStorage.getItem("totalOrder");
+//************************Au Chargement de la page******************************************
+function initConfirmation() { 
 
-const confirmation = document.getElementById("recapcommande");
+    //Récupération de l'id de la commande dans le local storage 
+    const recupid = localStorage.getItem("responseId");
+    const recupprix = localStorage.getItem("totalOrder");
 
-confirmation.innerHTML += `
+    const confirmation = document.getElementById("recapcommande");
 
-<p>Merci pour votre commande</p>
-<p>Votre commande numéro: <strong>${recupid} </strong> a bien été prise en compte </p>
-<p> Le montant de votre commande est de : <strong> ${recupprix/100}€ </strong></p>
-<p id="aurevoir">Au plaisir de vous revoir<p>
-`
+    confirmation.innerHTML += `
+        <p>Merci pour votre commande</p>
+        <p>Votre commande numéro: <strong>${recupid} </strong> a bien été prise en compte </p>
+        <p> Le montant de votre commande est de : <strong> ${recupprix/100}€ </strong></p>
+        <p id="aurevoir">Au plaisir de vous revoir<p>
+    `;
 
-function enleverLeLocalStorage(key) {
-    localStorage.removeItem(key);
+    deleteLocalStorage("totalOrder");
+    deleteLocalStorage("responseId");
+    deleteLocalStorage("cart");
 
 }
 
-enleverLeLocalStorage("totalOrder");
-enleverLeLocalStorage("responseId");
-enleverLeLocalStorage("cart");
+function deleteLocalStorage(key) {
+    localStorage.removeItem(key);
+}
+
